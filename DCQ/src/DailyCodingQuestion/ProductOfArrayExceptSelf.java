@@ -45,7 +45,7 @@ public class ProductOfArrayExceptSelf {
                 result[i] = 0;
             } else if(flag == 0){
                 result[i] = prod/nums[i];
-            } else if(flag ==1 && nums[0]!= 0){
+            } else if(flag ==1 && nums[i]!= 0){
                 result[i] = 0;
             } else {
                 result[i] = prod;
