@@ -26,13 +26,14 @@ import java.util.Scanner;
  */
 public class ReturnProductOfAllTheNumbersExcepti {
 
+    // This solution will have T.C -> O(n^2) S.C -> O(n) - Brute Force Approach.
    static public ArrayList<Integer> solve(ArrayList<Integer> arr){
        ArrayList<Integer> result = new ArrayList<>();
        for(int i=0;i<arr.size();i++){
            int skipI = i;
            int prod = 1;
            for (int j=0;j<arr.size();j++){
-               if(i != j){
+               if(skipI != j){
                    prod = prod * arr.get(j);
                }
            }
